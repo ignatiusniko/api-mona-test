@@ -44,6 +44,9 @@ definitions:
         default: true
       user_group_id:
         type: "string"
+      message:
+        type: "string"
+        default: "Login success"
 
   Endpoint400:
     type: "object"
@@ -54,6 +57,9 @@ definitions:
       reason:
         type: "string"
         default: "Invalid phone number"
+      message:
+        type: "string"
+        default: "Phone number is not found"
 
   Endpoint401:
     type: "object"
@@ -64,4 +70,7 @@ definitions:
       reason:
         type: "string"
         default: "Invalid credential"
+      message:
+        type: "string"
+        default: "Token has expired"
       
